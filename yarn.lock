@@ -438,6 +438,11 @@
     "@types/qs" "*"
     "@types/serve-static" "*"
 
+"@types/lodash@^4.14.172":
+  version "4.14.172"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.172.tgz#aad774c28e7bfd7a67de25408e03ee5a8c3d028a"
+  integrity sha512-/BHF5HAx3em7/KkzVKm3LrsD6HZAXuXO1AJZQ3cRRBZj4oHZDviWPYu0aEplAqDFNHZPW6d3G7KN+ONcCCC7pw==
+
 "@types/mime@^1":
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-1.3.2.tgz#93e25bf9ee75fe0fd80b594bc4feb0e862111b5a"
@@ -491,6 +496,11 @@
   dependencies:
     "@types/cookiejar" "*"
     "@types/node" "*"
+
+"@types/swagger-ui-dist@^3.30.1":
+  version "3.30.1"
+  resolved "https://registry.yarnpkg.com/@types/swagger-ui-dist/-/swagger-ui-dist-3.30.1.tgz#8ad3370dfce23bf73144bd9c5560afe2b5ccbd18"
+  integrity sha512-wWojDensMF33dSrhak4iWSPOsWBbvf+rSJ6VWQ7ohQbGdKAiT2IwUexrDZkMvf3+vVAPVnNFDRDtxADFszbh+Q==
 
 "@ungap/promise-all-settled@1.1.2":
   version "1.1.2"
@@ -951,6 +961,14 @@ convert-source-map@^1.7.0:
   integrity sha512-+OQdjP49zViI/6i7nIJpA8rAl4sV/JdPfU9nZs3VqOwGIgizICvuN2ru6fMd+4llL0tar18UYJXfZ/TWtmhUjA==
   dependencies:
     safe-buffer "~5.1.1"
+
+cookie-parser@^1.4.5:
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/cookie-parser/-/cookie-parser-1.4.5.tgz#3e572d4b7c0c80f9c61daf604e4336831b5d1d49"
+  integrity sha512-f13bPUj/gG/5mDr+xLmSxxDsB9DQiTIfhJS/sqjrmfAWiAN+x2O4i/XguTL9yDZ+/IFDanJ+5x7hC4CXT9Tdzw==
+  dependencies:
+    cookie "0.4.0"
+    cookie-signature "1.0.6"
 
 cookie-signature@1.0.6:
   version "1.0.6"
@@ -1793,7 +1811,7 @@ lodash.groupby@~4.6.0:
   resolved "https://registry.yarnpkg.com/lodash.groupby/-/lodash.groupby-4.6.0.tgz#0b08a1dcf68397c397855c3239783832df7403d1"
   integrity sha1-Cwih3PaDl8OXhVwyOXg4Mt90A9E=
 
-lodash@^4.17.19:
+lodash@^4.17.19, lodash@^4.17.21:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -2583,6 +2601,16 @@ surrial@~2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/surrial/-/surrial-2.0.2.tgz#739afbc9821ebf6aa4e3e9f32abf0021b73ef2b3"
   integrity sha512-YQ0XyrdBI8Kx10lIK81zOGXdGtc0P+3FTqEtCdaKzfEJKJWDju2QPp+XhzihmN2KOTRDtkKSyQQXZHYP+SqapA==
+
+swagger-express-ts@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/swagger-express-ts/-/swagger-express-ts-1.1.0.tgz#6de97fe3173e5a8ddd0653b00e5c5225c3c3bdb1"
+  integrity sha512-XgvEi4pp36rfXbHRT58uwsC50AxU8oVgFX3p3rEYlGZH8UV0srvZ8xFD7inNwZLKqbLtiRbjHLugGxggJnfHiw==
+
+swagger-ui-dist@^4.0.0-beta.2:
+  version "4.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/swagger-ui-dist/-/swagger-ui-dist-4.0.0-beta.2.tgz#19bf079ad9d3d1ecb5e8d0d7e9a4dce3e49359f9"
+  integrity sha512-HJ+S9XReb5H63io1zY/BM+sz1mnO9E3bv2mUEG15nCqL9lfOZsduvv6qOUzTq6TCSKEUYVYw1q8GsfzZfV+yDA==
 
 term-size@^2.1.0:
   version "2.2.1"

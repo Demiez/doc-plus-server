@@ -1,4 +1,5 @@
 import * as bodyParser from 'body-parser';
+import * as cookieParser from 'cookie-parser';
 import * as express from 'express';
 import { Index } from '../src/routes/index';
 
@@ -10,7 +11,11 @@ class App {
 
   constructor() {
     this.app = express();
-    this.app.use(bodyParser.json());
+
+    this.app.use(cookieParser());
+    this.app.use(bodyParser.json({ limit: '100mb' }));
+    this.app.use(bodyParser.urlencoded({ extended: true }));
+
     this.indexRoutes.routes(this.app);
   }
 }
