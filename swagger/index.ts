@@ -1,7 +1,7 @@
 import * as express from 'express';
 import * as core from 'express-serve-static-core';
 import * as swagger from 'swagger-express-ts';
-const package_json = require('../package.json');
+const packageJson = require('../package.json');
 
 export function registerSwagger(app: core.Express) {
   app.use('/api', express.static('swagger'));
@@ -10,8 +10,8 @@ export function registerSwagger(app: core.Express) {
     swagger.express({
       definition: {
         info: {
-          title: package_json.name,
-          version: package_json.version,
+          title: packageJson.name,
+          version: packageJson.version,
         },
         schemes: ['http', 'https'],
         securityDefinitions: {

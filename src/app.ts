@@ -1,22 +1,26 @@
 import * as bodyParser from 'body-parser';
 import * as cookieParser from 'cookie-parser';
+import * as cors from 'cors';
 import * as express from 'express';
-import { Index } from '../src/routes/index';
+import { registerSwagger } from '../swagger';
+import errorHandlingMiddleware from './core/middlewares/error-handling.middleware';
+import router from './core/router';
 
 require('dotenv').config();
 
 class App {
-  public app: express.Application;
-  public indexRoutes: Index = new Index();
+  public app = express();
 
   constructor() {
-    this.app = express();
-
     this.app.use(cookieParser());
     this.app.use(bodyParser.json({ limit: '100mb' }));
     this.app.use(bodyParser.urlencoded({ extended: true }));
+    this.app.use(cors());
 
-    this.indexRoutes.routes(this.app);
+    router(this.app);
+    registerSwagger(this.app);
+
+    errorHandlingMiddleware(this.app);
   }
 }
 
